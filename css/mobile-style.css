@@ -1,0 +1,82 @@
+:root {
+  --base-width: 320px;
+}
+
+html {
+  min-width: var(--base-width);
+  background: #FFF;
+}
+
+.container__header {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  align-items: center;
+  background: linear-gradient(90deg, #F8F8F8 0%, #FFF 98.61%);
+}
+
+.container__header-title {
+  color: #7E7E82;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 16px;
+}
+
+.container__brands {
+  width: calc(100% - 16px);
+  height: 160px;
+  padding-top: 16px;
+  padding-left: 16px;
+  align-self: flex-end;
+  background-color: #F8F8F8;
+}
+
+.container__brands-fade {
+  position: absolute;
+  z-index: 2;
+  width: 24px;
+  height: 74px;
+  right: 0;
+  background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.00) 100%);
+}
+
+@media all and (max-width: 320px) {
+  .container__brands-fade {
+    position: absolute;
+    z-index: 2;
+    width: 24px;
+    height: 74px;
+    right: 0;
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.00) 100%);
+    margin-right: calc((100% - var(--base-width)));
+  }
+}
+
+/* Переопределение стилей Swiper */
+.swiper-pagination-bullet {
+  width: 16px !important;
+  height: 16px !important;
+  background-color: #B5B6BC !important;
+}
+
+/* Дополнение к стилям Swiper */
+.container__brands-swiper {
+  width: 100%;
+  height: 120px;
+}
+
+.container__brands-swiper-slide.container__brands-swiper-slide-disable {
+  display: none;
+}
+
+.container__brands-swiper-pagination {
+  left: -16px !important;
+}
+
+.container__brands-show-all {
+  display: none;
+}

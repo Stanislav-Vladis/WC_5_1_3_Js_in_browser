@@ -1,0 +1,137 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Js in browser</title>
+
+  <script src="js/utils/utils.js"></script>
+  <script src="js/brands/hide-extra-brands.js"></script>
+  <link rel="stylesheet" href="css/general-style.css">
+  <link rel="stylesheet" media="all and (max-width: 768.00px)" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" media="all and (max-width: 768.00px)" href="css/mobile-style.css">
+  <link rel="stylesheet" media="all and (min-width: 768.02px) and (max-width: 1120.00px)" href="css/laptop-style.css">
+  <link rel="stylesheet" media="all and (min-width: 1120.02px)" href="css/desktop-style.css">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <header class="container__header">
+        <h1 class="container__header-title">Ремонт техники различных брендов</h1>
+      </header>
+      <div class="container__brands">
+        <div class="container__brands-fade"></div>
+        <div class="swiper container__brands-swiper">
+          <div class="swiper-wrapper container__brands-swiper-wrapper">
+            <div class="swiper-slide container__brands-swiper-slide">
+              <div class="container__brands-label lenovo-label">
+                <button class="container__brands-button">
+                  <div class="container__brands-arrow"></div>
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide container__brands-swiper-slide">
+              <div class="container__brands-label samsung-label">
+                <button class="container__brands-button">
+                  <div class="container__brands-arrow"></div>
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide container__brands-swiper-slide">
+              <div class="container__brands-label apple-label">
+                <button class="container__brands-button">
+                  <div class="container__brands-arrow"></div>
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide container__brands-swiper-slide">
+              <div class="container__brands-label viewSonic-label">
+                <button class="container__brands-button">
+                  <div class="container__brands-arrow"></div>
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide container__brands-swiper-slide">
+              <div class="container__brands-label bosch-label">
+                <button class="container__brands-button">
+                  <div class="container__brands-arrow"></div>
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide container__brands-swiper-slide">
+              <div class="container__brands-label hp-label">
+                <button class="container__brands-button">
+                  <div class="container__brands-arrow"></div>
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide container__brands-swiper-slide">
+              <div class="container__brands-label acer-label">
+                <button class="container__brands-button">
+                  <div class="container__brands-arrow"></div>
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide container__brands-swiper-slide">
+              <div class="container__brands-label sony-label">
+                <button class="container__brands-button">
+                  <div class="container__brands-arrow"></div>
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide container__brands-swiper-slide">
+              <div class="container__brands-label lenovo-label">
+                <button class="container__brands-button">
+                  <div class="container__brands-arrow"></div>
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide container__brands-swiper-slide">
+              <div class="container__brands-label samsung-label">
+                <button class="container__brands-button">
+                  <div class="container__brands-arrow"></div>
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide container__brands-swiper-slide">
+              <div class="container__brands-label apple-label">
+                <button class="container__brands-button">
+                  <div class="container__brands-arrow"></div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination container__brands-swiper-pagination"></div>
+        </div>
+        <div class="container__brands-show-all">
+          <div class="container__brands-show-all-img"></div>
+          <button class="container__brands-show-all-button">Показать все</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/elements/elements-from-page.js"></script>
+  <script src="js/brands/show-all-brands.js"></script>
+  <script src="js/swiper/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    const swiper = new Swiper(".container__brands-swiper", {
+      slidesPerView: 1,
+      spaceBetween: 16,
+      pagination: {
+        el: ".container__brands-swiper-pagination",
+        clickable: true,
+      },
+      width: 240
+    });
+  </script>
+</body>
+
+</html>
