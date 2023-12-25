@@ -6,8 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Js in browser</title>
 
-  <script src="js/utils/utils.js"></script>
-  <script src="js/brands/hide-extra-brands.js"></script>
+  <script type="module" src="js/utils/utils.js"></script>
   <link rel="stylesheet" href="css/general-style.css">
   <link rel="stylesheet" media="all and (max-width: 768.00px)" href="css/swiper-bundle.min.css" />
   <link rel="stylesheet" media="all and (max-width: 768.00px)" href="css/mobile-style.css">
@@ -117,21 +116,10 @@
     </div>
   </main>
 
-  <script src="js/elements/elements-from-page.js"></script>
-  <script src="js/brands/show-all-brands.js"></script>
+  <script type="module" src="js/brands/hide-extra-brands.js"></script>
+  <script type="module" src="js/brands/show-all-brands.js"></script>
   <script src="js/swiper/swiper-bundle.min.js"></script>
-  <!-- Initialize Swiper -->
-  <script>
-    const swiper = new Swiper(".container__brands-swiper", {
-      slidesPerView: 1,
-      spaceBetween: 16,
-      pagination: {
-        el: ".container__brands-swiper-pagination",
-        clickable: true,
-      },
-      width: 240
-    });
-  </script>
+  <script src="js/swiper/initialize-swiper.js"></script>
 </body>
 
 </html>

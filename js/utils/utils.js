@@ -1,7 +1,7 @@
-function isInnerWidthLessThan(width) {
+export function isInnerWidthLessThan(width) {
   return window.innerWidth < width;
 }
 
-function isInnerWidthMoreThan(width) {
+export function isInnerWidthMoreThan(width) {
   return window.innerWidth > width;
 }

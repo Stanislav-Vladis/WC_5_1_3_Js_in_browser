@@ -1,3 +1,9 @@
+import {isInnerWidthLessThan, isInnerWidthMoreThan} from "../utils/utils.js";
+import { slides, hideExtraBrands } from './hide-extra-brands.js';
+
+const brandsShowAllBlock = document.querySelector('.container__brands-show-all');
+const brandsShowAllButton = brandsShowAllBlock.querySelector('.container__brands-show-all-button');
+
 window.addEventListener('resize', checkDisplayBrands);
 
 brandsShowAllButton.addEventListener('click', function () {
@@ -11,7 +17,6 @@ brandsShowAllButton.addEventListener('click', function () {
 });
 
 function checkDisplayBrands() {
-  const windowWidth = window.innerWidth;
   if (isInnerWidthLessThan(768) &&
     !brandsShowAllBlock.classList.contains('container__brands-show-all_enable') &&
     slides[slides.length - 1].classList.contains('container__brands-swiper-slide-disable')) {
